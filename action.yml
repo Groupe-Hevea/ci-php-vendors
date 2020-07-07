@@ -3,4 +3,4 @@ name: 'CI PHP Actions'
 description: 'Run PHP CI tasks (SAST/Testing)'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'webofmars/apci:v7.2.31'
