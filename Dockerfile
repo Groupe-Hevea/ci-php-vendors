@@ -13,3 +13,5 @@ RUN pecl install -o -f redis-5.0.3 \
   &&  docker-php-ext-enable redis
 
 COPY --from=composer:1.10.8 /usr/bin/composer /usr/bin/composer
+
+ENTRYPOINT ["/bin/bash", "-c"]
