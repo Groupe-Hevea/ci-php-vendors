@@ -3,6 +3,6 @@ name: 'CI PHP Actions'
 description: 'Run PHP CI tasks (SAST/Testing)'
 runs:
   using: 'docker'
-  image: 'webofmars/apci:v7.2.31'
+  image: 'docker://webofmars/apci:v7.2.31'
   args:
     - composer install
