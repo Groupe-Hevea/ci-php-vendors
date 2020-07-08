@@ -3,7 +3,7 @@ name: 'CI PHP Vendors'
 description: 'Install PHP vendors through composer'
 runs:
   using: 'docker'
-  image: 'docker://docker.pkg.github.com/groupe-hevea/ci-php-vendors/ci-php-actions'
+  image: 'docker://docker.pkg.github.com/groupe-hevea/ci-php-actions/ci-php-actions'
   args:
     - echo "::set-output name=dir::$(composer config cache-files-dir)" && \
       composer global require hirak/prestissimo && \
